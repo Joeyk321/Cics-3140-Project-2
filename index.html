@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Olympic Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Paris Olympic Games</h1>
+            <img src="paris olympic.jpg" alt="Paris Olympic Games Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#medal-rankings" class="nav-link">Medal Rankings</a></li>
+                <li><a href="#sports" class="nav-link">Sports</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 id="welcome-heading">Welcome to the Paris Olympic Games</h2>
+            <p>Below you may find the latest news, medal rankings, and sports schedules.</p>
+        </section>
+
+        <section id="medal-rankings">
+            <h2>Medal Rankings</h2>
+            <div class="button-container">
+                <button onclick="showRankings('Gold')">Gold</button>
+                <button onclick="showRankings('Silver')">Silver</button>
+                <button onclick="showRankings('Bronze')">Bronze</button>
+                <button onclick="showRankings('Total')">Total</button>
+            </div>
+            <p>Click on a button to display the medal rankings.</p>
+            <ul id="ranking-list"></ul>
+            <button onclick="resetRankings()">Reset Rankings</button>
+        </section>
+
+
+        <section id="sports">
+            <h2>Sports</h2>
+            <p>Click on a button to display the schedule of events.</p>
+            <ul>
+                <li><a href="#" class="sport-link" data-sport="Basketball">Basketball</a></li>
+                <li><a href="#" class="sport-link" data-sport="Baseball">Baseball</a></li>
+                <li><a href="#" class="sport-link" data-sport="Volleyball">Volleyball</a></li>
+                <li><a href="#" class="sport-link" data-sport="Cricket">Cricket</a></li>
+                <li><a href="#" class="sport-link" data-sport="Swimming">Swimming</a></li>
+            </ul>
+            <div id="schedule"></div>
+            <button id="reset-schedule">Reset Schedule</button>
+        </section>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Click on a news item to read more.</p>
+            <ul id="news-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
