@@ -91,11 +91,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
     const newsItems = [
-        { title: "2024 Opening Olympics Ceremony", content: "<a href='https://olympics.com/en/paris-2024/the-games/ceremonies/opening-ceremony'>Click here</a>" },
-        { title: "Live Updates", content: "<a href='https://olympics.com/en/paris-2024/live-updates/e7566ebb-4daa-4dfc-9cbd-4abf8638b4df'>Click here</a>" },
-        { title: "Unexpected Winner", content: "<a href='https://dailyhive.com/vancouver/canada-surprise-olympic-medal-great-day-paris'>Click here</a>" }
+        { title: "2024 Opening Olympics Ceremony", content: "<a href='https://olympics.com/en/paris-2024/the-games/ceremonies/opening-ceremony' class='custom-button'>Click here</a>" },
+        { title: "Live Updates", content: "<a href='https://olympics.com/en/paris-2024/live-updates/e7566ebb-4daa-4dfc-9cbd-4abf8638b4df' class='custom-button'>Click here</a>" },
+        { title: "Unexpected Winner", content: "<a href='https://dailyhive.com/vancouver/canada-surprise-olympic-medal-great-day-paris' class='custom-button'>Click here</a>" }
     ];
-
+    
     const newsList = document.getElementById('news-list');
     newsItems.forEach(news => {
         const li = document.createElement('li');
